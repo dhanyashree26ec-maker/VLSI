@@ -1,0 +1,8 @@
+d_ff.v {1 {vlog -work work -stats=none {C:/Users/THIS PC/Desktop/FPGA/MODELSIM/PROJECT/d/d_ff.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
+-- Compiling module d_ff
+
+Top level modules:
+	d_ff
+
+} {} {}}

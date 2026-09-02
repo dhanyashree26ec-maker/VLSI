@@ -1,0 +1,36 @@
+m255
+K4
+z2
+!s11f vlog 2020.3 2020.07, Jul 22 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/THIS PC/Desktop/FPGA/MODELSIM/PROJECT/d/work
+vd_ff
+DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+!s110 1788160549
+!i10b 1
+!s100 g:A3?bWO]=WL[8]^2U][83
+!s11b Dg1SIo80bB@j0V0VzS_@n1
+IG>1<Nn3DU2a?kX]X[0Y0W1
+S1
+R0
+w1788159706
+8C:/Users/THIS PC/Desktop/FPGA/MODELSIM/PROJECT/dsv/d_ff.sv
+FC:/Users/THIS PC/Desktop/FPGA/MODELSIM/PROJECT/dsv/d_ff.sv
+!i122 1
+L0 1 10
+VDg1SIo80bB@j0V0VzS_@n1
+OV;L;2020.3;71
+r1
+!s85 0
+31
+!s108 1788160549.000000
+!s107 C:/Users/THIS PC/Desktop/FPGA/MODELSIM/PROJECT/dsv/d_ff.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/THIS PC/Desktop/FPGA/MODELSIM/PROJECT/dsv/d_ff.sv|
+!i113 1
+o-work work -sv
+tCvgOpt 0

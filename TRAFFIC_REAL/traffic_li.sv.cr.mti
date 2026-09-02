@@ -1,0 +1,8 @@
+traffic_li.sv {1 {vlog -work work -sv -stats=none {C:/Users/THIS PC/Desktop/FPGA/MODELSIM/PROJECT/TRAFFIC_REAL/traffic_li.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
+-- Compiling module traffic_light
+
+Top level modules:
+	traffic_light
+
+} {} {}}

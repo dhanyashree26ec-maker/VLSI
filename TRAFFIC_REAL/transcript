@@ -1,0 +1,157 @@
+# Compile of wash_mac.sv was successful.
+vsim work.washing_machine
+# vsim work.washing_machine 
+# Start time: 10:32:26 on Sep 02,2026
+# Loading sv_std.std
+# Loading work.washing_machine
+add wave -r *
+# ** UI-Msg: (vish-4014) No objects found matching '*'.
+run 100ns
+vlog washing_machine.sv washing_machine_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
+# Start time: 10:34:37 on Sep 02,2026
+# vlog -reportprogress 300 washing_machine.sv washing_machine_tb.sv 
+# ** Error: (vlog-7) Failed to open design unit file "washing_machine.sv" in read mode.
+# No such file or directory. (errno = ENOENT)
+# End time: 10:34:37 on Sep 02,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# C:/intelFPGA_pro/20.4/modelsim_ase/win32aloem/vlog failed.
+vsim washing_machine_tb
+# End time: 10:34:40 on Sep 02,2026, Elapsed time: 0:02:14
+# Errors: 0, Warnings: 5
+# vsim washing_machine_tb 
+# Start time: 10:34:40 on Sep 02,2026
+# ** Error: (vsim-3170) Could not find 'washing_machine_tb'.
+#         Searched libraries:
+#             C:/Users/THIS PC/Desktop/FPGA/MODELSIM/PROJECT/wash_machine/work
+# Error loading design
+add wave -r *
+# End time: 10:34:41 on Sep 02,2026, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 1
+run 220ns
+# No Design Loaded!
+wave zoom full
+# {0 ps} {1 ns}
+quit -sim
+# reading C:/intelFPGA_pro/20.4/modelsim_ase/win32aloem/../modelsim.ini
+# Loading project wash_tb.sv
+# Compile of wash_tb.sv was successful.
+vsim work.washing_machine_tb
+# vsim work.washing_machine_tb 
+# Start time: 10:37:12 on Sep 02,2026
+# Loading sv_std.std
+# Loading work.washing_machine_tb
+# Loading work.washing_machine
+vlog washing_machine.sv washing_machine_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
+# Start time: 10:38:14 on Sep 02,2026
+# vlog -reportprogress 300 washing_machine.sv washing_machine_tb.sv 
+# ** Error: (vlog-7) Failed to open design unit file "washing_machine.sv" in read mode.
+# No such file or directory. (errno = ENOENT)
+# End time: 10:38:14 on Sep 02,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# C:/intelFPGA_pro/20.4/modelsim_ase/win32aloem/vlog failed.
+vsim washing_machine_tb
+# End time: 10:38:18 on Sep 02,2026, Elapsed time: 0:01:06
+# Errors: 0, Warnings: 6
+# vsim washing_machine_tb 
+# Start time: 10:38:18 on Sep 02,2026
+# Loading sv_std.std
+# Loading work.washing_machine_tb
+# Loading work.washing_machine
+add wave -r *
+run 220ns
+# Time=0 | reset=1 | start=0 | WASH=0 | RINSE=0 | DRY=0 | STOP=0
+# Time=10000 | reset=0 | start=0 | WASH=0 | RINSE=0 | DRY=0 | STOP=0
+# Time=20000 | reset=0 | start=1 | WASH=0 | RINSE=0 | DRY=0 | STOP=0
+# Time=25000 | reset=0 | start=1 | WASH=1 | RINSE=0 | DRY=0 | STOP=0
+# Time=30000 | reset=0 | start=0 | WASH=1 | RINSE=0 | DRY=0 | STOP=0
+# Time=75000 | reset=0 | start=0 | WASH=0 | RINSE=1 | DRY=0 | STOP=0
+# Time=105000 | reset=0 | start=0 | WASH=0 | RINSE=0 | DRY=1 | STOP=0
+# Time=155000 | reset=0 | start=0 | WASH=0 | RINSE=0 | DRY=0 | STOP=1
+# Time=165000 | reset=0 | start=0 | WASH=0 | RINSE=0 | DRY=0 | STOP=0
+# ** Note: $finish    : C:/Users/THIS PC/Desktop/FPGA/MODELSIM/PROJECT/wash_machine/wash_tb.sv(99)
+#    Time: 210 ns  Iteration: 0  Instance: /washing_machine_tb
+# 1
+# Break in Module washing_machine_tb at C:/Users/THIS PC/Desktop/FPGA/MODELSIM/PROJECT/wash_machine/wash_tb.sv line 99
+wave zoom full
+# {0 ps} {220500 ps}
+vsim work.washing_machine_tb
+# End time: 10:39:16 on Sep 02,2026, Elapsed time: 0:00:58
+# Errors: 0, Warnings: 1
+# vsim work.washing_machine_tb 
+# Start time: 10:39:16 on Sep 02,2026
+# Loading sv_std.std
+# Loading work.washing_machine_tb
+# Loading work.washing_machine
+# Compile of wash_tb.sv was successful.
+vsim work.washing_machine_tb
+# End time: 10:40:03 on Sep 02,2026, Elapsed time: 0:00:47
+# Errors: 0, Warnings: 2
+# vsim work.washing_machine_tb 
+# Start time: 10:40:03 on Sep 02,2026
+# Loading sv_std.std
+# Loading work.washing_machine_tb
+# Loading work.washing_machine
+vlog washing_machine.sv washing_machine_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
+# Start time: 10:40:16 on Sep 02,2026
+# vlog -reportprogress 300 washing_machine.sv washing_machine_tb.sv 
+# ** Error: (vlog-7) Failed to open design unit file "washing_machine.sv" in read mode.
+# No such file or directory. (errno = ENOENT)
+# End time: 10:40:16 on Sep 02,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# C:/intelFPGA_pro/20.4/modelsim_ase/win32aloem/vlog failed.
+vsim washing_machine_tb
+# End time: 10:40:20 on Sep 02,2026, Elapsed time: 0:00:17
+# Errors: 0, Warnings: 1
+# vsim washing_machine_tb 
+# Start time: 10:40:20 on Sep 02,2026
+# Loading sv_std.std
+# Loading work.washing_machine_tb
+# Loading work.washing_machine
+add wave -r *
+run 220ns
+# Time=0 | reset=1 | start=0 | WASH=0 | RINSE=0 | DRY=0 | STOP=0
+# Time=10000 | reset=0 | start=0 | WASH=0 | RINSE=0 | DRY=0 | STOP=0
+# Time=20000 | reset=0 | start=1 | WASH=0 | RINSE=0 | DRY=0 | STOP=0
+# Time=25000 | reset=0 | start=1 | WASH=1 | RINSE=0 | DRY=0 | STOP=0
+# Time=30000 | reset=0 | start=0 | WASH=1 | RINSE=0 | DRY=0 | STOP=0
+# Time=75000 | reset=0 | start=0 | WASH=0 | RINSE=1 | DRY=0 | STOP=0
+# Time=105000 | reset=0 | start=0 | WASH=0 | RINSE=0 | DRY=1 | STOP=0
+# Time=155000 | reset=0 | start=0 | WASH=0 | RINSE=0 | DRY=0 | STOP=1
+# Time=165000 | reset=0 | start=0 | WASH=0 | RINSE=0 | DRY=0 | STOP=0
+wave zoom full
+# {0 ps} {231 ns}
+quit -sim
+# End time: 11:35:04 on Sep 02,2026, Elapsed time: 0:54:44
+# Errors: 0, Warnings: 1
+
+# reading C:/intelFPGA_pro/20.4/modelsim_ase/win32aloem/../modelsim.ini
+# Loading project wash_mac.sv
+# Compile of wash_mac.sv was successful.
+vsim work.washing_machine
+# vsim work.washing_machine 
+# Start time: 11:43:09 on Sep 02,2026
+# Loading sv_std.std
+# Loading work.washing_machine
+quit -sim
+# End time: 11:47:30 on Sep 02,2026, Elapsed time: 0:04:21
+# Errors: 0, Warnings: 5
+# reading C:/intelFPGA_pro/20.4/modelsim_ase/win32aloem/../modelsim.ini
+# Loading project wash_tb.sv
+# Compile of wash_tb.sv was successful.
+# Compile of wash_tb.sv was successful.
+vsim work.washing_machine_tb
+# vsim work.washing_machine_tb 
+# Start time: 11:48:52 on Sep 02,2026
+# Loading sv_std.std
+# Loading work.washing_machine_tb
+# Loading work.washing_machine
+add wave -r /*
+run 250 ns
+# ** Note: $stop    : C:/Users/THIS PC/Desktop/FPGA/MODELSIM/PROJECT/wash_machine/wash_tb.sv(85)
+#    Time: 220 ps  Iteration: 0  Instance: /washing_machine_tb
+# Break in Module washing_machine_tb at C:/Users/THIS PC/Desktop/FPGA/MODELSIM/PROJECT/wash_machine/wash_tb.sv line 85
+wave zoom full
+# {0 ps} {231 ps}

@@ -1,0 +1,61 @@
+m255
+K4
+z2
+!s11f vlog 2020.3 2020.07, Jul 22 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/THIS PC/Desktop/FPGA/MODELSIM/PROJECT/tra_light
+vtraffic_light
+Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+!s110 1788321170
+!i10b 1
+!s100 efjl^6k]:6PYMmX:jeQS:0
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IhVQCdJEP7@hXocjC5;j<d3
+S1
+Z2 dC:/Users/THIS PC/Desktop/FPGA/MODELSIM/PROJECT/TRAFFIC_REAL
+w1788321101
+8C:/Users/THIS PC/Desktop/FPGA/MODELSIM/PROJECT/TRAFFIC_REAL/traffic_li.sv
+FC:/Users/THIS PC/Desktop/FPGA/MODELSIM/PROJECT/TRAFFIC_REAL/traffic_li.sv
+!i122 0
+L0 3 151
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 OV;L;2020.3;71
+r1
+!s85 0
+31
+!s108 1788321170.000000
+!s107 C:/Users/THIS PC/Desktop/FPGA/MODELSIM/PROJECT/TRAFFIC_REAL/traffic_li.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/THIS PC/Desktop/FPGA/MODELSIM/PROJECT/TRAFFIC_REAL/traffic_li.sv|
+!i113 1
+Z5 o-work work -sv
+Z6 tCvgOpt 0
+vtraffic_light_tb
+R0
+!s110 1788321954
+!i10b 1
+!s100 62VSnUAQI]:e4HQ>3UU;N3
+R1
+ID^PgChhYcQgElinSeo4J?3
+S1
+R2
+w1788321842
+8C:/Users/THIS PC/Desktop/FPGA/MODELSIM/PROJECT/TRAFFIC_REAL/trafficli_tb.sv
+FC:/Users/THIS PC/Desktop/FPGA/MODELSIM/PROJECT/TRAFFIC_REAL/trafficli_tb.sv
+!i122 2
+L0 3 99
+R3
+R4
+r1
+!s85 0
+31
+!s108 1788321954.000000
+!s107 C:/Users/THIS PC/Desktop/FPGA/MODELSIM/PROJECT/TRAFFIC_REAL/trafficli_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/THIS PC/Desktop/FPGA/MODELSIM/PROJECT/TRAFFIC_REAL/trafficli_tb.sv|
+!i113 1
+R5
+R6

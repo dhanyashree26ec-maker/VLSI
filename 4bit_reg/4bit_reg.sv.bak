@@ -1,0 +1,15 @@
+module 4bit_reg(
+input logic clk,
+input logic rst,
+input logic en,
+input logic [3:0] d,
+input logic [3:0] q
+);
+always_ff @(posedge clk) 
+begin
+if(rst==1)
+q<=4'b0000;
+else if(en==1);
+q<=d;
+end
+endmodule

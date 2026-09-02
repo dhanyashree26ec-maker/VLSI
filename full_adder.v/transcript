@@ -1,0 +1,9 @@
+# Compile of full_adder.sv was successful.
+vsim -gui work.full_adder
+# vsim -gui work.full_adder 
+# Start time: 11:00:56 on Aug 31,2026
+# Loading sv_std.std
+# Loading work.full_adder
+quit -sim
+# End time: 11:01:27 on Aug 31,2026, Elapsed time: 0:00:31
+# Errors: 0, Warnings: 5

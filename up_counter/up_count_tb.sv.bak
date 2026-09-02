@@ -1,0 +1,24 @@
+`timescale 1ns/1ps
+
+module up_count_tb;
+logic clk;
+logic reset;
+logic[3:0]q;
+
+up_counter dut(
+.clk(clk),
+.reset(reset),
+.q(q)
+);
+initial begin
+clk = 0;
+forever #5 clk = ~clk;
+end
+
+initial begin
+reset=1;
+#10
+reset=0;
+#170
+end
+endmodule

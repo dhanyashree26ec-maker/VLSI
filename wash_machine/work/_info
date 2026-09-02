@@ -1,0 +1,61 @@
+m255
+K4
+z2
+!s11f vlog 2020.3 2020.07, Jul 22 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/THIS PC/Desktop/FPGA/MODELSIM/PROJECT/TRAFFIC_REAL
+vwashing_machine
+Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+!s110 1788329530
+!i10b 1
+!s100 gPDId6RLBDK=CZ<Th[S?b1
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I;J^7@RZ;E>l_aK>^cFmEO2
+S1
+Z2 dC:/Users/THIS PC/Desktop/FPGA/MODELSIM/PROJECT/wash_machine
+w1788329470
+8C:/Users/THIS PC/Desktop/FPGA/MODELSIM/PROJECT/wash_machine/wash_mac.sv
+FC:/Users/THIS PC/Desktop/FPGA/MODELSIM/PROJECT/wash_machine/wash_mac.sv
+!i122 3
+L0 1 152
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 OV;L;2020.3;71
+r1
+!s85 0
+31
+!s108 1788329529.000000
+!s107 C:/Users/THIS PC/Desktop/FPGA/MODELSIM/PROJECT/wash_machine/wash_mac.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/THIS PC/Desktop/FPGA/MODELSIM/PROJECT/wash_machine/wash_mac.sv|
+!i113 1
+Z5 o-work work -sv
+Z6 tCvgOpt 0
+vwashing_machine_tb
+R0
+!s110 1788329913
+!i10b 1
+!s100 dXm>JSn__XL0Aon4VEH6B3
+R1
+I[eJRZUPnz:YUm9V9]3D1K2
+S1
+R2
+w1788329808
+8C:/Users/THIS PC/Desktop/FPGA/MODELSIM/PROJECT/wash_machine/wash_tb.sv
+FC:/Users/THIS PC/Desktop/FPGA/MODELSIM/PROJECT/wash_machine/wash_tb.sv
+!i122 5
+L0 1 89
+R3
+R4
+r1
+!s85 0
+31
+!s108 1788329913.000000
+!s107 C:/Users/THIS PC/Desktop/FPGA/MODELSIM/PROJECT/wash_machine/wash_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/THIS PC/Desktop/FPGA/MODELSIM/PROJECT/wash_machine/wash_tb.sv|
+!i113 1
+R5
+R6

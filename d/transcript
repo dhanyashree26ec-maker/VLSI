@@ -1,0 +1,262 @@
+# Compile of dd_ff.sv was successful.
+vsim -gui work.d_ff
+# vsim -gui work.d_ff 
+# Start time: 12:23:21 on Aug 31,2026
+# Loading sv_std.std
+# Loading work.d_ff
+add wave *
+run 50ns
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+vsim work.dd_ff.sv
+# End time: 12:25:50 on Aug 31,2026, Elapsed time: 0:02:29
+# Errors: 0, Warnings: 1
+# vsim work.dd_ff.sv 
+# Start time: 12:25:50 on Aug 31,2026
+# ** Error (suppressible): (vsim-19) Failed to access library 'work.dd_ff' at "work.dd_ff".
+# No such file or directory. (errno = ENOENT)
+# Error loading design
+# End time: 12:25:51 on Aug 31,2026, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 1
+add wave *
+run 100 ns
+# No Design Loaded!
+run 100ns
+# No Design Loaded!
+run 50nss
+# No Design Loaded!
+run 50ns
+# No Design Loaded!
+quit -sim
+quit -sim
+
+
+
+
+
+vsim work.d_ff
+# vsim work.d_ff 
+# Start time: 12:28:02 on Aug 31,2026
+# Loading sv_std.std
+# Loading work.d_ff
+# Load canceled
+quit -sim
+# End time: 12:29:02 on Aug 31,2026, Elapsed time: 0:01:00
+# Errors: 0, Warnings: 3
+cd {C:/Users/THIS PC/Desktop/FPGA/MODELSIM/PROJECT/dsv}
+# reading C:/intelFPGA_pro/20.4/modelsim_ase/win32aloem/../modelsim.ini
+vlog -reportprogress 300 -work work {C:/Users/THIS PC/Desktop/FPGA/MODELSIM/PROJECT/dsv/dd_ff.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
+# Start time: 12:29:55 on Aug 31,2026
+# vlog -reportprogress 300 -work work C:/Users/THIS PC/Desktop/FPGA/MODELSIM/PROJECT/dsv/dd_ff.sv 
+# -- Compiling module d_ff
+# 
+# Top level modules:
+# 	d_ff
+# End time: 12:29:55 on Aug 31,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Load canceled
+# Loading project d_ff.sv
+# Compile of d_ff.sv was successful.
+# Load canceled
+cd {C:/Users/THIS PC/Desktop/FPGA/MODELSIM/PROJECT/dsv/work}
+# reading C:/intelFPGA_pro/20.4/modelsim_ase/win32aloem/../modelsim.ini
+# Loading project d_ff.sv
+# Compile of d_ff.sv was successful.
+# Load canceled
+cd {C:/Users/THIS PC/Desktop/FPGA/MODELSIM/PROJECT/d/work}
+# reading C:/intelFPGA_pro/20.4/modelsim_ase/win32aloem/../modelsim.ini
+# Loading project d_ff.sv
+# Compile of d_ff.sv was successful.
+vsim work.d_ff
+# vsim work.d_ff 
+# Start time: 12:37:28 on Aug 31,2026
+# Loading sv_std.std
+# Loading work.d_ff
+add wave *
+force d 0 0ns, 1 20ns, 0 40ns, 1 60ns
+force clk 0 0ns, 1 10ns -repeat 20ns
+run 100ns
+wave zoom full
+# {0 ps} {105 ns}
+add wave /d_ff/d /d_ff/clk /d_ff/q
+force /d_ff/d 0 0ns, 1 20ns, 0 40ns, 1 60ns
+force /d_ff/clk 0 0ns, 1 10ns -repeat 20ns
+run 100ns
+quit -sim
+# End time: 12:44:15 on Aug 31,2026, Elapsed time: 0:06:47
+# Errors: 0, Warnings: 13
+# Compile of d_ff.sv was successful.
+# reading C:/intelFPGA_pro/20.4/modelsim_ase/win32aloem/../modelsim.ini
+# Loading project dflip_tb.sv
+# Compile of dflip_tb.sv was successful.
+vsim work.d_flip_flop_tb
+# vsim work.d_flip_flop_tb 
+# Start time: 12:48:04 on Aug 31,2026
+# Loading sv_std.std
+# Loading work.d_flip_flop_tb
+# ** Error: (vsim-3033) Instantiation of 'd_flip_flop' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /d_flip_flop_tb File: C:/Users/THIS PC/Desktop/FPGA/MODELSIM/PROJECT/dsv/dflip_tb.sv Line: 8
+#         Searched libraries:
+#             C:/Users/THIS PC/Desktop/FPGA/MODELSIM/PROJECT/dsv/work
+# Error loading design
+# End time: 12:48:05 on Aug 31,2026, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 8
+add wave +
+run 80ns
+# No Design Loaded!
+add wavw *
+# ** Error: bad option "wavw": should be one of...
+#   add atv ?options? ?arg arg ...?
+#   add button text action ?disable? ?options? ?help?
+#   add dataflow ?options? ?arg arg ...?
+#   add lists ?options? ?arg arg ...?
+#   add log ?options? ?arg arg ...?
+#   add memory options ?arg arg ...?
+#   add message ?options? ?arg arg ...?
+#   add monitor ?options? ?arg arg ...?
+#   add schematic ?options? ?arg arg ...?
+#   add testbrowser ?options? ?arg arg ...?
+#   add virtual ?options? ?arg arg ...?
+#   add watch ?options? ?arg arg ...?
+#   add wave ?options? ?arg arg ...?
+quit -sim
+vsim work.d_flip_flop_tb
+# vsim work.d_flip_flop_tb 
+# Start time: 12:49:27 on Aug 31,2026
+# Loading sv_std.std
+# Loading work.d_flip_flop_tb
+# ** Error: (vsim-3033) Instantiation of 'd_flip_flop' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /d_flip_flop_tb File: C:/Users/THIS PC/Desktop/FPGA/MODELSIM/PROJECT/dsv/dflip_tb.sv Line: 8
+#         Searched libraries:
+#             C:/Users/THIS PC/Desktop/FPGA/MODELSIM/PROJECT/dsv/work
+# Error loading design
+# End time: 12:49:28 on Aug 31,2026, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 2
+add wave *
+run 80ns
+# No Design Loaded!
+vsim work.dflip_tb
+# vsim work.dflip_tb 
+# Start time: 12:51:01 on Aug 31,2026
+# ** Error: (vsim-3170) Could not find 'dflip_tb'.
+#         Searched libraries:
+#             C:/Users/THIS PC/Desktop/FPGA/MODELSIM/PROJECT/dsv/work
+# Error loading design
+# End time: 12:51:02 on Aug 31,2026, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 1
+add wave*
+# ** Error: bad option "wave*": should be one of...
+#   add atv ?options? ?arg arg ...?
+#   add button text action ?disable? ?options? ?help?
+#   add dataflow ?options? ?arg arg ...?
+#   add lists ?options? ?arg arg ...?
+#   add log ?options? ?arg arg ...?
+#   add memory options ?arg arg ...?
+#   add message ?options? ?arg arg ...?
+#   add monitor ?options? ?arg arg ...?
+#   add schematic ?options? ?arg arg ...?
+#   add testbrowser ?options? ?arg arg ...?
+#   add virtual ?options? ?arg arg ...?
+#   add watch ?options? ?arg arg ...?
+#   add wave ?options? ?arg arg ...?
+run 50ns
+# No Design Loaded!
+
+
+wave zoom full
+# {0 ps} {1 ns}
+vsim work.d_flip_flop_tb
+# vsim work.d_flip_flop_tb 
+# Start time: 12:52:00 on Aug 31,2026
+# Loading sv_std.std
+# Loading work.d_flip_flop_tb
+# ** Error: (vsim-3033) Instantiation of 'd_flip_flop' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /d_flip_flop_tb File: C:/Users/THIS PC/Desktop/FPGA/MODELSIM/PROJECT/dsv/dflip_tb.sv Line: 8
+#         Searched libraries:
+#             C:/Users/THIS PC/Desktop/FPGA/MODELSIM/PROJECT/dsv/work
+# Error loading design
+# End time: 12:52:01 on Aug 31,2026, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 1
+add wave *
+run 50ns
+# No Design Loaded!
+run 500ns
+# No Design Loaded!
+vlog -sv dflip_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
+# Start time: 12:53:45 on Aug 31,2026
+# vlog -reportprogress 300 -sv dflip_tb.sv 
+# -- Compiling module d_flip_flop_tb
+# 
+# Top level modules:
+# 	d_flip_flop_tb
+# End time: 12:53:45 on Aug 31,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.dflip_tb
+# vsim work.dflip_tb 
+# Start time: 12:54:04 on Aug 31,2026
+# ** Error: (vsim-3170) Could not find 'dflip_tb'.
+#         Searched libraries:
+#             C:/Users/THIS PC/Desktop/FPGA/MODELSIM/PROJECT/dsv/work
+# Error loading design
+# End time: 12:54:05 on Aug 31,2026, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 1
+add wave *
+run 50ns
+# No Design Loaded!
+# A time value could not be extracted from the current line
+quit -sim
+cd {C:/Users/THIS PC/Desktop/FPGA/MODELSIM/PROJECT/dsv/work}
+# reading C:/intelFPGA_pro/20.4/modelsim_ase/win32aloem/../modelsim.ini
+cd {C:/Users/THIS PC/Desktop/FPGA/MODELSIM/PROJECT/dsv/work/work}
+# Loading project dflip_tb.sv
+# reading C:/intelFPGA_pro/20.4/modelsim_ase/win32aloem/../modelsim.ini
+# Loading project dflip_tb.sv
+# Compile of dflip_tb.sv was successful.
+vsim work.dflip_tb
+# vsim work.dflip_tb 
+# Start time: 13:01:32 on Aug 31,2026
+# ** Error: (vsim-3170) Could not find 'dflip_tb'.
+#         Searched libraries:
+#             C:/Users/THIS PC/Desktop/FPGA/MODELSIM/PROJECT/dsv/work/work
+# Error loading design
+# End time: 13:01:33 on Aug 31,2026, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 10
+add wavw *
+# ** Error: bad option "wavw": should be one of...
+#   add atv ?options? ?arg arg ...?
+#   add button text action ?disable? ?options? ?help?
+#   add dataflow ?options? ?arg arg ...?
+#   add lists ?options? ?arg arg ...?
+#   add log ?options? ?arg arg ...?
+#   add memory options ?arg arg ...?
+#   add message ?options? ?arg arg ...?
+#   add monitor ?options? ?arg arg ...?
+#   add schematic ?options? ?arg arg ...?
+#   add testbrowser ?options? ?arg arg ...?
+#   add virtual ?options? ?arg arg ...?
+#   add watch ?options? ?arg arg ...?
+#   add wave ?options? ?arg arg ...?
+vsim work.d_flip_flop_tb
+# vsim work.d_flip_flop_tb 
+# Start time: 13:02:07 on Aug 31,2026
+# Loading sv_std.std
+# Loading work.d_flip_flop_tb
+# ** Error: (vsim-3033) Instantiation of 'd_flip_flop' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /d_flip_flop_tb File: C:/Users/THIS PC/Desktop/FPGA/MODELSIM/PROJECT/dsv/work/dflip_tb.sv Line: 8
+#         Searched libraries:
+#             C:/Users/THIS PC/Desktop/FPGA/MODELSIM/PROJECT/dsv/work/work
+# Error loading design
+# End time: 13:02:08 on Aug 31,2026, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 1
+add wave *
+run 50ns
+# No Design Loaded!
+quit -sim
+cd {C:/Users/THIS PC/Desktop/FPGA/MODELSIM/PROJECT/dsv/work}
+# reading C:/intelFPGA_pro/20.4/modelsim_ase/win32aloem/../modelsim.ini
+# Loading project dflip_tb.sv
+# Compile of dflip_tb.sv was successful.
+# Load canceled
+quit -sim

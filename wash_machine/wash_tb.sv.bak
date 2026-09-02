@@ -1,0 +1,103 @@
+`timescale 1ns/1ps
+
+module washing_machine_tb;
+
+    logic clk;
+    logic reset;
+    logic start;
+
+    logic wash;
+    logic rinse;
+    logic dry;
+    logic stop;
+
+
+    // -----------------------------------------
+    // Instantiate DUT
+    // -----------------------------------------
+
+    washing_machine dut (
+
+        .clk   (clk),
+        .reset (reset),
+        .start (start),
+
+        .wash  (wash),
+        .rinse (rinse),
+        .dry   (dry),
+        .stop  (stop)
+
+    );
+
+
+    // -----------------------------------------
+    // Clock generation
+    // 10 ns period
+    // -----------------------------------------
+
+    always #5 clk = ~clk;
+
+
+    // -----------------------------------------
+    // Monitor
+    // -----------------------------------------
+
+    initial begin
+
+        $monitor(
+            "Time=%0t | reset=%b | start=%b | WASH=%b | RINSE=%b | DRY=%b | STOP=%b",
+            $time,
+            reset,
+            start,
+            wash,
+            rinse,
+            dry,
+            stop
+        );
+
+    end
+
+
+    // -----------------------------------------
+    // Test sequence
+    // -----------------------------------------
+
+    initial begin
+
+        // Initial values
+
+        clk   = 0;
+        reset = 1;
+        start = 0;
+
+
+        // Reset
+
+        #10;
+
+        reset = 0;
+
+
+        // Press START
+
+        #10;
+
+        start = 1;
+
+        #10;
+
+        start = 0;
+
+
+        // Allow complete washing cycle
+
+        #180;
+
+
+        // Finish simulation
+
+        
+
+    end
+
+endmodule

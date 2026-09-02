@@ -1,0 +1,147 @@
+`timescale 1ns/1ps
+
+module washing_machine (
+
+    input  logic clk,
+    input  logic reset,
+    input  logic start,
+
+    output logic wash,
+    output logic rinse,
+    output logic dry,
+    output logic stop
+);
+
+
+    typedef enum logic [2:0] {
+        IDLE,
+        WASH,
+        RINSE,
+        DRY,
+        STOP
+    } state_t;
+
+    state_t state;
+
+    logic [3:0] count;
+
+
+    always_ff @(posedge clk) begin
+
+        if (reset) begin
+
+            state <= IDLE;
+            count <= 0;
+
+        end
+
+        else begin
+
+            case (state)
+
+                IDLE: begin
+
+                    count <= 0;
+
+                    if (start)
+                        state <= WASH;
+
+                end
+
+
+                WASH: begin
+
+                    if (count == 4) begin
+                        count <= 0;
+                        state <= RINSE;
+                    end
+
+                    else
+                        count <= count + 1;
+
+                end
+
+
+                RINSE: begin
+
+                    if (count == 2) begin
+                        count <= 0;
+                        state <= DRY;
+                    end
+
+                    else
+                        count <= count + 1;
+
+                end
+
+
+                DRY: begin
+
+                    if (count == 4) begin
+                        count <= 0;
+                        state <= STOP;
+                    end
+
+                    else
+                        count <= count + 1;
+
+                end
+
+
+                STOP: begin
+
+                    count <= 0;
+                    state <= IDLE;
+
+                end
+
+
+                default: begin
+
+                    state <= IDLE;
+                    count <= 0;
+
+                end
+
+            endcase
+
+        end
+
+    end
+
+
+      
+    always_comb begin
+
+        wash  = 0;
+        rinse = 0;
+        dry   = 0;
+        stop  = 0;
+
+        case (state)
+
+            WASH: begin
+                wash = 1;
+            end
+
+            RINSE: begin
+                rinse = 1;
+            end
+
+            DRY: begin
+                dry = 1;
+            end
+
+            STOP: begin
+                stop = 1;
+            end
+
+            default: begin
+                
+            end
+
+        endcase
+
+    end
+
+endmodule
